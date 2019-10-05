@@ -109,7 +109,7 @@ if (IMG.VR==T){
 return (classified.results)
 }
   
-# Data were first processed as <> 200 kb, but these are later merged and filtered into <> 200 kb.
+# Data were first processed as <> 150 kb, but these are later merged and filtered into <> 200 kb.
 hits_Genbank_gb150kb<-Process_Matches("search_results_typeIII_spacers_unique_Refseq_genbank_caudovirales_150kb.fasta",F,F)%>%
   mutate(system="TypeIII",target.database="gb>150kb")
 hits_Genbank_gb150kb_shuffled<-Process_Matches("search_results_typeIII_spacers_unique_Refseq_caudovirales_150kb.fasta_shuffled",F,F)%>%
